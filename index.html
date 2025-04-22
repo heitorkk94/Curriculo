@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="link rel="preconnect rel="stylesheet"href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>curriculo</title>
     <link rel="stylesheet" href="estilo.css" />
   </head>
-
 
   <body>
     <header>
@@ -25,7 +32,8 @@
 
     <!--vamos começar a trabalhar com o corpo do curriculo-->
     <section class="descricao">
-      <p>Coloque aqui uma breve descrição sobre você</p>
+      <p>Meu nome é Heitor, sou um estudante do IFMT Campus Campo Verde, estou no segundo ano do Ensino Médio e cursando TI, e estou animado para aprender mais sobre tecnologia e desenvolvimento.</p>
+      <button id="botao">Continue Aqui</button>
     </section>
 
     <section class="conteudo">
@@ -43,34 +51,64 @@
           Conte alguma participação tanto de projetos ou eventos específicos...
         </p>
       </div>
-    </section
-    
-    >
+    </section>
     <section class="falacomigo">
       <h2>Interessado no meu currículo?</h2>
-      <form>
+      <form
+      action="https://formspree.io/f/xblojder"
+      method="POST">
         <label for="email">Email:</label>
-        <input placeholder="example@gmail.com" type="email" id="email" name="email" required />
+        <input
+          placeholder="example@gmail.com"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
         <label for="telefone">Telefone:</label>
-        <input placeholder="(66) *****-****" type="telefone" id="telefone" name="telefone" required />
-        <button type="submit">Entrar em Contato</button>
+        <input
+          placeholder="(66) *****-****"
+          type="telefone"
+          id="telefone"
+          name="telefone"
+          required
+        />
+        <button id="botao" type="submit">Entrar em Contato</button>
       </form>
     </section>
     <section class="conteudo">
       <div class="bloco">
+        <div id="card">
         <h2>Sobre Mim</h2>
-      <p>Adicione suas informações sobre você</p>
+        <p>Adicione suas informações sobre você</p>
       </div>
-      
-        <div class="bloco">
-          <h2>Meu Canal</h2>
-          <iframe width="325" height="315" src="https://www.youtube.com/embed/TIGdXFnHuDI?si=BZF7VEU1VHrPu-zp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        
-          <div class="bloco">
-            <h2>Mensagem Positiva</h2>
-          <p>"O prazer no trabalho aperfeiçoa a obra...Não busque ser perfeito, mas sim evoluir."</p>
-          </div>
+      </div>
+
+      <div class="bloco">
+        <h2>Meu Canal</h2>
+        <iframe
+          width="325"
+          height="315"
+          src="https://www.youtube.com/embed/TIGdXFnHuDI?si=BZF7VEU1VHrPu-zp"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="bloco">
+        <h2>Mensagem Positiva</h2>
+        <p>
+          "O prazer no trabalho aperfeiçoa a obra...Não busque ser perfeito, mas
+          sim evoluir."
+        </p>
+      </div>
+    </div>
     </section>
+
+    
+    <script src="index.js"></script>
   </body>
 </html>
